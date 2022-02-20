@@ -41,7 +41,7 @@ const Footer =()=>{
                         <p className=" text-white-50 m-0 py-2">All Rights Are Reserved @ 2021 Lokal Grub | Designed by Cart Geek</p>
                     </div>
                     <div className="col-md-6 text-end align-self-center">
-                        <img src="./Visa-Logo.png" className=" me-3" alt="err" width="40px"/>
+                        <img src="./Visa-Logo-png" className=" me-3" alt="err" width="40px"/>
                         <img src="./mastercard-logo.png" className="me-3" alt="err" width="70px"/>
                         <img src="./American-Express_Logo.png" className="me-3" alt="err" width="80px"/>
                         <img src="./discover-logo.png" className="" alt="err" width="70px"/>

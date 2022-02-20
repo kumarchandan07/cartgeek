@@ -9,33 +9,25 @@ import Category from "../src/Foodcart/Components/Category/category";
 import PopularWeek from "../src/Foodcart/Components/Popular/PopularWeek";
 import AboutChef from "./Foodcart/Components/aboutChef/aboutChef";
 import Footer from "./Foodcart/Components/Footer/footer"
+import Datas from './datas.json';
 
 const App=()=>{
 
-
+  const [datass, setDatass] = useState({});
   const [data, setData] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(3);
   
-  async function postData(url = '') {
+ 
+  async function postData(url = 'http://63.142.251.101:3000/mymenu-data') {
     // Default options are marked with *
     const response = await fetch(url, {
-      method: 'POST' // *GET, POST, PUT, DELETE, etc.
-    
+      method: 'POST', // *GET, POST, PUT, DELETE, etc.
       
     });
     return response.json(); // parses JSON response into native JavaScript objects
   }
-  const getApiData = () => {
-    const apiURL = "http://63.142.251.101:3000/mymenu-data"
-    axios.post(apiURL).then((res) => {
-      setData(res.data.data)
-      
-    }).catch((error) => {
-      console.log("error", Error)
-    })
-  }
-
+  
   useEffect(() => {
     //getApiData("http://63.142.251.101:3000/mymenu-data");
     postData('http://63.142.251.101:3000/mymenu-data')
@@ -43,9 +35,9 @@ const App=()=>{
       setData(data.data);
       console.log("fetch",data.data); // JSON data parsed by `data.json()` call
     });
-    console.log("response", data)
+    setDatass(Datas[0]);
+    console.log("response11", datass)
   },[]);
-
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
