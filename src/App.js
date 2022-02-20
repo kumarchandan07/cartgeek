@@ -19,7 +19,7 @@ const App=()=>{
   const [postsPerPage] = useState(3);
   
  
-  async function postData(url = 'http://63.142.251.101:3000/mymenu-data') {
+  async function postData(url = 'https://63.142.251.101:3000/mymenu-data') {
     // Default options are marked with *
     const response = await fetch(url, {
       method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -30,7 +30,7 @@ const App=()=>{
   
   useEffect(() => {
     //getApiData("http://63.142.251.101:3000/mymenu-data");
-    postData('http://63.142.251.101:3000/mymenu-data')
+    postData('https://63.142.251.101:3000/mymenu-data')
     .then(data => {
       setData(data.data);
       console.log("fetch",data.data); // JSON data parsed by `data.json()` call
