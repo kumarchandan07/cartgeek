@@ -1,0 +1,28 @@
+.card{
+    width: 302px;
+    margin-right: 5rem;
+}
+.list-Item{
+    display: flex;
+    margin-left: 50px;
+    padding-left: 5rem;
+}
+.carousel-item.active,
+.d-block
+{
+    position: relative;
+}
+.avatar{
+    direction: rtl;
+    width: 50%;
+    float: right;
+    position: absolute;
+    left: 150px;
+    bottom: 3rem;
+}
+.avatar-left{
+    direction: ltr;
+    width: 50%;
+    float: left;
+    padding-top: 10px;
+}

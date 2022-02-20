@@ -1,0 +1,14 @@
+.col-md-1{
+    position: relative;
+    margin-top: 4rem;
+
+}
+.category-list{
+    overflow: hidden;
+}
+.container-data {
+    /* position: absolute; */
+    display: flex;
+    margin-left: 9rem;
+    text-align: center;
+}

@@ -1,0 +1,83 @@
+
+
+.master-red{
+    width: 100%;
+    margin-top: 3rem;
+    position: relative;
+}
+.background-div{
+    position: relative;
+    height: 27rem;
+    background: #EC2044;
+}
+.data-name{
+    width: 50%;
+    float: left;
+}
+.review-rating{
+    width: 50%;
+    float: right;
+}
+.avatar-chef{
+    margin-left: 20rem;
+    top: 3rem;
+    direction: ltr;
+    width: 50%;
+    float: left;
+    position: absolute;
+    left: 150px;
+    bottom: 3rem;
+}
+.chef-name{
+    color: white;
+    padding-left: 35rem;
+    padding-top: 3.2rem;
+}
+.d-block{
+    position: relative;
+}
+.circle-center{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    margin-left: 21.5rem;
+    margin-top: -16rem;
+    float: right;
+}
+.view-details{
+    float: right;
+    margin-right: 50px;
+}
+.reviews-message{
+    margin-top: 12px;
+    margin-left: 130px;
+    margin-bottom: 38px;
+    color: #323F4B;
+    font-size: 15px;
+}
+.icon-box{
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+.fw-bold.subtitle.ps-2{
+    color: #323F4B;
+    clear: both;
+}
+.avtar-chef-name{
+    font-weight: bold;
+    color: #1F2933;
+    font-family:'Times New Roman', Times, serif;
+    font-style: normal;
+        /* font-weight: bold; */
+    font-size: 37px;
+}
+.main-div{
+    width: 88%;
+    background: #FFFFFF;
+    height: 28.180rem;
+    position: absolute;
+    left: 5rem;
+    top: 140px;
+}
