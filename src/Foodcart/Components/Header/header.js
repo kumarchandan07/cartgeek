@@ -9,7 +9,7 @@ const Header = () =>{
             </div>
             <div className="navigation">
                     <div className="container">
-                    <img src="../ss1.png" alt="" class="img-thumbnail"></img>
+                    <img src="../ss1.png" alt="" className="img-thumbnail"></img>
                         <button className="button1">Become a chef</button>
                         <button className="button">login</button>
                     </div>

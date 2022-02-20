@@ -17,7 +17,18 @@ const App=()=>{
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(3);
   
-
+  async function postData(url = '') {
+    // Default options are marked with *
+    const response = await fetch(url, {
+      method: 'POST', // *GET, POST, PUT, DELETE, etc.
+      headers: {
+        'Content-Type': 'application/json'
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      }
+      
+    });
+    return response.json(); // parses JSON response into native JavaScript objects
+  }
   const getApiData = () => {
     const apiURL = "http://63.142.251.101:3000/mymenu-data"
     axios.post(apiURL).then((res) => {
@@ -29,7 +40,12 @@ const App=()=>{
   }
 
   useEffect(() => {
-    setData(getApiData("http://63.142.251.101:3000/mymenu-data"));
+    //getApiData("http://63.142.251.101:3000/mymenu-data");
+    postData('http://63.142.251.101:3000/mymenu-data')
+    .then(data => {
+      setData(data.data);
+      console.log("fetch",data.data); // JSON data parsed by `data.json()` call
+    });
     console.log("response", data)
   },[]);
 
