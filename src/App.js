@@ -20,11 +20,8 @@ const App=()=>{
   async function postData(url = '') {
     // Default options are marked with *
     const response = await fetch(url, {
-      method: 'POST', // *GET, POST, PUT, DELETE, etc.
-      headers: {
-        'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
-      }
+      method: 'POST' // *GET, POST, PUT, DELETE, etc.
+    
       
     });
     return response.json(); // parses JSON response into native JavaScript objects
