@@ -24,7 +24,7 @@ const PopularWeek = (props) =>{
                                         <p className="fw-bold subtitle ps-2">{item.chefname}</p>
                                     </div>
                                     <div className="avatar">
-                                        <img src={item.chefprofile?"http://63.142.251.101:3000/"+ item.chefprofile:"./avatar.jpg"} className=" border-4 rounded-circle border border-white" alt="" width="70" height="70"/> 
+                                        <img src={item.chefprofile?"http://63.142.251.101:3000/"+ item.chefprofile:"https://www.w3schools.com/howto/img_avatar.png"} className=" border-4 rounded-circle border border-white" alt="" width="70" height="70"/> 
 
                                     </div>
                                 </div>

@@ -43,7 +43,7 @@ const App=()=>{
   return (
     <div >
     <Header/>
-     <Category/> 
+     {data && data.cuisine_list && <Category data={data.cuisine_list}/>} 
      {/* <Popular userData={data}/> */}
      <div>
         <View title="Popular Weekly Food" postsPerPage={postsPerPage}

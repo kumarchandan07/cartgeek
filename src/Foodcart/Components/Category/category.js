@@ -1,64 +1,12 @@
 import "./styles/category.css";
 const Category = (props) =>{
-    const data=[
-        {
-            "id": 1,
-            "name": "Thai",
-            "img": "./food.jpg"
-        },
-        {
-            "id": 2,
-            "name": "Indian ",
-            "img": "./food.jpg"
-        },
-        {
-            "id": 3,
-            "name": "Italian",
-            "img": "./food.jpg"
-        },
-        {
-            "id": 4,
-            "name": "Chinese",
-            "img": "./food.jpg"
-        },
-        {
-            "id": 5,
-            "name": "Korean",
-            "img": "./food.jpg"
-        },
-        {
-            "id": 6,
-            "name": "African",
-            "img": "./food.jpg"
-        },
-        {
-            "id": 7,
-            "name": "American",
-            "img": "./food.jpg"
-        },
-        {
-            "id": 8,
-            "name": "Baked ",
-            "img":"./food.jpg"
-        },
-        {
-            "id": 9,
-            "name": "Caribbean",
-            "img": "./food.jpg"
-        },
-        {
-            "id": 10,
-            "name": "Dessert",
-            "img": "./food.jpg"
-        }
-        
-    ]
+    const data=props.data;
     return(
         <div className="category-list">
                 <div className="container-data">
                     {data.map((item, index) =>(
                         <div  className="col-md-1" key={index} >
-                            <img src={item.img} className="rounded-circle" alt="err" width="50"/>
+                            <img src={item.imageUrl?"http://63.142.251.101:3000/"+ item.imageUrl:"https://image.similarpng.com/very-thumbnail/2020/06/Restaurant-logo-with-chef-drawing-template-on-transparent-background-PNG.png"} className="rounded-circle" alt="err" width="50"/>
                             <p className=" fw-bold">{item.name}</p>
                         </div>
                     ))}                
